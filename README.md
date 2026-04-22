@@ -1,6 +1,4 @@
-I fixed the README you shared  and folded in the missing pieces: a sharper top summary, an actual architecture flow, better scanability, and stronger recruiter-facing positioning.
 
-````markdown
 # High-Concurrency Event Ticket Booking System (Backend)
 
 ![Java](https://img.shields.io/badge/Java-17-007396?logo=openjdk&logoColor=white)
