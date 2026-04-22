@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: eventhub-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Maheshdatabase
+      MYSQL_DATABASE: eventhub
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  redis:
+    image: redis:7
+    container_name: eventhub-redis
+    restart: always
+    ports:
+      - "6379:6379"
+
+volumes:
+  mysql_data:
